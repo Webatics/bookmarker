@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Bookmarker App - Save your favorite bookmarks without stress">
+    <meta name="author" content="Egomson Femmy">
+    <link rel="icon" href="img/logo-raw.png">
+
+    <title>Bookmarker | Save your favorite sites</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css">
+
+    <!-- Custom styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body onload="fetchBookmarks();">
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed hidden" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo" href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <!-- <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul> -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Bookmark Your Favorite Site</h1><br>
+        <form action="" id="myForm">
+        	<div class="form-group">
+        		<label>Site Name:</label>
+        		<input type="text" class="form-control" id="siteName" placeholder="Website Name">
+        	</div>
+        	<div class="form-group">
+        		<label>Site URL:</label>
+        		<input type="text" class="form-control" id="siteUrl" placeholder="Website URL e.g (http://www.example.com)">
+        	</div>
+        	<button class="btn btn-secondary" type="submit" id="">Bookmark</button>
+        </form>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+          <div id="bookmarksResults">
+          </div>
+        </div>
+
+        
+
+      <footer class="footer text-center">
+      	<div class="container">
+      		<p>&copy; 2017 Bookmarker - Developed by Egomson Femmy.</p>
+      	</div>
+      </footer>
+
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
